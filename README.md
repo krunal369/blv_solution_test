@@ -1,9 +1,9 @@
-Exercise contains Page Object Model concept with help of Python+Selenium+Pytest
+Exercise contains Page Object Model concept with help of Python+Selenium+Pytest.
 prerequisite to run this python challenge
 - **pytho3** 
 - **pip**
 
-Please execute below command to configure all required modules
+Please execute below command before execute test to configure all required modules
 - **pip install -r requirement.txt**
 
 Please execute below command to test scenario for exercise
