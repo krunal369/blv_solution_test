@@ -17,7 +17,7 @@ class BasePage:
             EC.visibility_of_element_located((By.XPATH, by_locator)))
 
     def get_element(self, by_locator):
-        """function will find element from web page"""
+        """function will find element from web pages"""
         element = self.wait_for_element_to_visible(by_locator)
         self.driver.execute_script("arguments[0].scrollIntoView();", element)
         return element
@@ -38,9 +38,9 @@ class BasePage:
         ActionChains(self.driver).move_to_element(self.get_element(by_locator)).perform()
 
     def take_screen_shot(self, file_name):
-        """function will take a screenshot of web page"""
+        """function will take a screenshot of web pages"""
         self.driver.get_screenshot_as_file(file_name)
 
     def get_current_page_title(self):
-        """function will return title of current web page."""
+        """function will return title of current web pages."""
         return self.driver.title

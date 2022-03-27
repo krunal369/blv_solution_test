@@ -1,4 +1,4 @@
-from page.BasePage import BasePage
+from pages.BasePage import BasePage
 
 
 class HomePage(BasePage):

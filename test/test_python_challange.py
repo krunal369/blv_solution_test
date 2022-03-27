@@ -4,8 +4,8 @@ import time
 import pytest
 
 from config.Configurations import Configurations
-from page.AgencyAnalysisPage import AgentAnalysisPage
-from page.HomePage import HomePage
+from pages.AgencyAnalysisPage import AgentAnalysisPage
+from pages.HomePage import HomePage
 
 
 @pytest.mark.usefixtures('init_browser')
@@ -16,12 +16,12 @@ class TestBlvSolutionPythonChallenge:
         """
         home_page = HomePage(self.driver)
         assert home_page.get_current_page_title() == Configurations.HOME_PAGE_TITLE,\
-            "Not able to open Home page."
+            "Not able to open Home pages."
         home_page.click_agency_analysis()
         agency_analysis_page = AgentAnalysisPage(self.driver)
         assert Configurations.AGENCY_ANALYSIS_PAGE_TITLE == \
                agency_analysis_page.get_current_page_title(),\
-            "Not able to open agency analysis page."
+            "Not able to open agency analysis pages."
         if Configurations.AGENCY_LIST:
             agency_analysis_page.click_select_agency_dropdown()
             agency_analysis_page.select_agencies(Configurations.AGENCY_LIST)
