@@ -1,0 +1,7 @@
+selenium
+webdriver-manager
+pytest
+pytest-xdist
+pytest-html
+pep8
+pywin32
